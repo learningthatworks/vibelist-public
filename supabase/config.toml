@@ -1,0 +1,10 @@
+project_id = "syxpdymopkpketmvybtq"
+
+[functions.submit-vote]
+verify_jwt = false
+
+[functions.send-contact-email]
+verify_jwt = false
+
+[functions.submit-product]
+verify_jwt = false

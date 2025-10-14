@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Purple-blue gradient scheme for "vibe" aesthetic */
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 240 10% 3.9%;
+
+    --muted: 220 13% 95%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 280 65% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 263 70% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(263, 70%, 50%), hsl(280, 65%, 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(220, 14%, 98%));
+    --shadow-card: 0 2px 8px -2px hsl(240 10% 3.9% / 0.1);
+    --shadow-hover: 0 8px 24px -6px hsl(263 70% 50% / 0.2);
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 280 65% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 60.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 263 70% 55%;
+
+    /* Dark mode custom tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(263, 70%, 55%), hsl(280, 65%, 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(240, 10%, 3.9%), hsl(240, 10%, 7%));
+    --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-hover: 0 8px 24px -6px hsl(263 70% 55% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-size: 16px; /* WCAG: minimum readable font size */
+    line-height: 1.5; /* WCAG: improved readability */
+  }
+
+  /* WCAG: Ensure minimum touch target size of 44x44px */
+  button, a, input, select, textarea, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* WCAG: Visible focus indicators */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+
+  /* WCAG: Improved contrast for placeholders */
+  ::placeholder {
+    opacity: 0.6;
+  }
+}
