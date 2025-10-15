@@ -14,7 +14,7 @@ VibeApps is a transparent, community-driven directory that helps developers disc
 
 ## 🚀 Live Demo
 
-Visit the live application: https://lovable.dev/projects/9f16b841-3404-4c8a-83ab-acd9c9bcc1a1
+Visit the live application: https://vibelist.lovable.app/
 
 ## 🛠️ Tech Stack
 
@@ -112,7 +112,7 @@ The design system uses semantic tokens defined in:
 ## 📦 Deployment
 
 ### Deploy on Lovable
-1. Visit [Lovable](https://lovable.dev/projects/9f16b841-3404-4c8a-83ab-acd9c9bcc1a1)
+1. Visit [Lovable](https://lovable.dev/projects/039d3103-4174-487f-aa66-f265baf20f8c)
 2. Click Share → Publish
 3. Your app will be live at `<project-name>.lovable.app`
 4. Optional: Connect a custom domain in Project > Settings > Domains
@@ -136,7 +136,7 @@ This is the community edition! Feel free to:
 
 **Use Lovable**
 
-Visit the [Lovable Project](https://lovable.dev/projects/9f16b841-3404-4c8a-83ab-acd9c9bcc1a1) and start prompting. Changes made via Lovable will be committed automatically to this repo.
+Visit the [Lovable Project](https://lovable.dev/projects/039d3103-4174-487f-aa66-f265baf20f8c) and start prompting. Changes made via Lovable will be committed automatically to this repo.
 
 **Use Your Preferred IDE**
 
